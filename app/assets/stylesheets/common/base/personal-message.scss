@@ -1,0 +1,221 @@
+.archetype-private_message {
+  --pm-border-radius: 0;
+  --pm-padding: 1.25em;
+
+  .topic-post {
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .regular.contents {
+    border-radius: 0 var(--pm-border-radius) var(--pm-border-radius)
+      var(--pm-border-radius);
+    border: 1px solid var(--primary-low);
+    padding-left: var(--pm-padding);
+
+    .desktop-view & {
+      margin-left: calc(var(--pm-padding) * -1);
+    }
+  }
+
+  .topic-avatar,
+  .topic-body {
+    border: none;
+  }
+
+  .topic-body .cooked {
+    box-sizing: border-box;
+    margin-top: 0.25em;
+    padding-right: calc(var(--topic-body-width-padding) * 2);
+  }
+
+  .post-menu-area {
+    padding-right: calc(var(--topic-body-width-padding) * 2);
+    margin: 0.5em 0 var(--topic-body-width-padding);
+  }
+
+  .who-liked {
+    box-sizing: border-box;
+    padding-right: var(--topic-body-width-padding);
+  }
+
+  .post-notice {
+    box-sizing: border-box;
+    border-radius: var(--pm-border-radius);
+    background-color: var(--tertiary-very-low);
+    border-color: var(--tertiary-very-low);
+    margin-bottom: 1em;
+    margin-left: 1.65em;
+    padding: var(--pm-padding) 2em;
+    max-width: calc(
+      var(--topic-body-width) + var(--topic-body-width-padding) * 2 +
+        var(--topic-avatar-width) - 1.65em
+    );
+
+    &.old {
+      border: 1px solid var(--primary-low);
+    }
+  }
+
+  .topic-map {
+    border: none;
+    padding-block: var(--pm-padding);
+    padding-left: calc(
+      48px - var(--pm-padding)
+    ); // 48px is the width of the avatar
+    display: grid;
+    grid-template-areas: "contents additional" "pm-map pm-map";
+    grid-template-columns: 1fr auto;
+
+    section {
+      border: none;
+      background: var(--primary-very-low);
+      padding-inline: var(--pm-padding);
+    }
+
+    .map {
+      padding-top: var(--pm-padding);
+    }
+
+    &__contents,
+    &__additional-contents {
+      padding-top: var(--pm-padding);
+    }
+
+    &__contents {
+      grid-area: contents;
+    }
+
+    &__additional-contents {
+      grid-area: additional;
+    }
+
+    &__private-message-map {
+      grid-area: pm-map;
+      padding: 0.5em var(--pm-padding) var(--pm-padding);
+    }
+
+    .participants {
+      margin-bottom: 1.5em;
+
+      .user {
+        border: none;
+        background: var(--primary-low);
+        padding: 2px 4px;
+        border-radius: var(--pm-border-radius);
+      }
+    }
+  }
+
+  .map:first-of-type .buttons .btn {
+    border: none;
+    border-radius: var(--pm-border-radius);
+  }
+
+  .embedded-posts {
+    border: none;
+
+    .topic-body {
+      overflow: visible;
+      width: 100%;
+    }
+
+    .topic-avatar {
+      padding-left: 0;
+    }
+
+    .collapse-down,
+    .collapse-up {
+      display: none;
+    }
+
+    &.bottom {
+      margin-bottom: 0;
+      margin-right: calc(var(--topic-body-width-padding) * 2);
+    }
+
+    &.top {
+      .cooked {
+        border: 1px solid var(--primary-low);
+        border-radius: var(--pm-border-radius);
+        margin-left: calc(var(--pm-padding) * -1);
+        padding-left: 2.15em;
+      }
+
+      .row {
+        .topic-body,
+        .topic-avatar {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .timeline-replies {
+    display: flex;
+    align-items: baseline;
+    margin-right: 0.15em;
+  }
+
+  // special post type colors
+  .current-user-post {
+    .regular.contents {
+      background: var(--tertiary-very-low);
+      border-color: var(--tertiary-very-low);
+    }
+
+    .embedded-posts {
+      .topic-body .cooked {
+        background: transparent;
+      }
+    }
+  }
+
+  .moderator {
+    .topic-body.highlighted {
+      .regular.contents {
+        animation: none;
+      }
+    }
+
+    .regular.contents {
+      background: var(--highlight-low);
+      border-color: var(--highlight-low);
+
+      .cooked {
+        background: transparent;
+      }
+    }
+  }
+
+  .whisper {
+    .topic-body .regular.contents {
+      background: transparent;
+      border: 2px dashed var(--primary-low);
+    }
+
+    &.current-user-post .topic-body .regular.contents {
+      border: 2px dashed var(--tertiary-low);
+    }
+  }
+
+  .deleted {
+    .topic-body .regular.contents {
+      background: var(--danger-low);
+      border-color: transparent;
+
+      .cooked {
+        background: transparent;
+      }
+    }
+
+    &.whisper {
+      .topic-body .regular.contents {
+        border-color: var(--danger-low-mid);
+      }
+    }
+  }
+}
