@@ -586,8 +586,8 @@ importers:
         specifier: ^7.4.0
         version: 7.4.0
       message-bus-client:
-        specifier: ^4.3.9
-        version: 4.3.9
+        specifier: ^4.4.1
+        version: 4.4.1
       pretender:
         specifier: ^3.4.7
         version: 3.4.7
@@ -6329,8 +6329,8 @@ packages:
   mersenne-twister@1.1.0:
     resolution: {integrity: sha512-mUYWsMKNrm4lfygPkL3OfGzOPTR2DBlTkBNHM//F6hGp8cLThY897crAlk3/Jo17LEOOjQUrNAx6DvgO77QJkA==}
 
-  message-bus-client@4.3.9:
-    resolution: {integrity: sha512-fbDUSdao7rYt49jwlVPkFAnkOob240LXF0DtCc+Adqya2D9wrqXG8wnjqDzp7AywkKS6RtIkmGLJ/yrGmIXHMw==}
+  message-bus-client@4.4.1:
+    resolution: {integrity: sha512-6Ny8Ei6dt4dhjHgD/HjmCTDelPxiN+dO7PxhncUqfKhHKpcVqFpctrhxXK5sYmxkpPNxEjRNw9kEvftxsMGeFw==}
 
   methods@1.1.2:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
@@ -8454,10 +8454,10 @@ packages:
   virtual-dom@2.1.1:
     resolution: {integrity: sha512-wb6Qc9Lbqug0kRqo/iuApfBpJJAq14Sk1faAnSmtqXiwahg7PVTvWMs9L02Z8nNIMqbwsxzBAA90bbtRLbw0zg==}
 
-  volar-service-typescript@0.0.60:
-    resolution: {integrity: sha512-QDGC66exWZMH6fs93M6XFIBMxDObxgV9q1XENII7vGzvW5KqikYG4f06AO+MWsHmAna8cI+X28xITb0SzzB0Yw==}
+  volar-service-typescript@0.0.64:
+    resolution: {integrity: sha512-FN2H97iqjR1id8AM4fH7lTXuTx2on9zD6QlUFllaiHKqgNrEITlQwm/9Ujrd9ST7MUzhgIKyUsa2WlanX9kkMg==}
     peerDependencies:
-      '@volar/language-service': ~2.4.0-alpha.19
+      '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
       '@volar/language-service':
         optional: true
@@ -10297,7 +10297,7 @@ snapshots:
       silent-error: 1.1.1
       typescript: 5.6.3
       uuid: 8.3.2
-      volar-service-typescript: 0.0.60(@volar/language-service@2.4.0-alpha.16)
+      volar-service-typescript: 0.0.64(@volar/language-service@2.4.0-alpha.16)
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
@@ -15535,7 +15535,7 @@ snapshots:
 
   mersenne-twister@1.1.0: {}
 
-  message-bus-client@4.3.9: {}
+  message-bus-client@4.4.1: {}
 
   methods@1.1.2: {}
 
@@ -17981,7 +17981,7 @@ snapshots:
       x-is-array: 0.1.0
       x-is-string: 0.1.0
 
-  volar-service-typescript@0.0.60(@volar/language-service@2.4.0-alpha.16):
+  volar-service-typescript@0.0.64(@volar/language-service@2.4.0-alpha.16):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.1
