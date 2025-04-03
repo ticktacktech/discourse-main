@@ -55,7 +55,7 @@ GEM
     annotate (3.2.0)
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
-    ast (2.4.2)
+    ast (2.4.3)
     aws-eventstream (1.3.2)
     aws-partitions (1.1053.0)
     aws-sdk-core (3.219.0)
@@ -351,7 +351,7 @@ GEM
     parallel (1.26.3)
     parallel_tests (5.1.0)
       parallel
-    parser (3.3.7.1)
+    parser (3.3.7.4)
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
@@ -359,6 +359,7 @@ GEM
       prettyprint
     prettier_print (1.2.1)
     prettyprint (0.2.0)
+    prism (1.4.0)
     progress (3.6.0)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -493,8 +494,9 @@ GEM
       rubocop-ast (>= 1.38.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.38.1)
-      parser (>= 3.3.1.0)
+    rubocop-ast (1.44.0)
+      parser (>= 3.3.7.2)
+      prism (~> 1.4)
     rubocop-capybara (2.22.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
@@ -809,7 +811,7 @@ CHECKSUMS
   activesupport (7.2.2.1) sha256=842bcbf8a92977f80fb4750661a237cf5dd4fdd442066b3c35e88afb488647f5
   addressable (2.8.7) sha256=462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232
   annotate (3.2.0) sha256=9a61baa1fb13880aa3a8d9f62553889bb2a3b7970f88bbc66d3ac75a567780d3
-  ast (2.4.2) sha256=1e280232e6a33754cde542bc5ef85520b74db2aac73ec14acef453784447cc12
+  ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
   aws-eventstream (1.3.2) sha256=7e2c3a55ca70d7861d5d3c98e47daa463ed539c349caba22b48305b8919572d7
   aws-partitions (1.1053.0) sha256=6f06634f719c745929d671909919e608d2b3c9072df85f6c074823f4a79d11ca
   aws-sdk-core (3.219.0) sha256=d10c3832ece1f1de8edb7cbbcd737dd49b2789fae8744537943e86fdd822c649
@@ -970,11 +972,12 @@ CHECKSUMS
   ostruct (0.6.1) sha256=09a3fb7ecc1fa4039f25418cc05ae9c82bd520472c5c6a6f515f03e4988cb817
   parallel (1.26.3) sha256=d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef
   parallel_tests (5.1.0) sha256=c8cc0eef06577543dc3e09220ac5271809d9a1c65fa52ef86dd759bb4cb5aba5
-  parser (3.3.7.1) sha256=7dbe61618025519024ac72402a6677ead02099587a5538e84371b76659e6aca1
+  parser (3.3.7.4) sha256=2b26282274280e13f891080dc4ef3f65ce658d62e13255b246b28ec6754e98ab
   pg (1.5.9) sha256=761efbdf73b66516f0c26fcbe6515dc7500c3f0aa1a1b853feae245433c64fdc
   pp (0.6.2) sha256=947ec3120c6f92195f8ee8aa25a7b2c5297bb106d83b41baa02983686577b6ff
   prettier_print (1.2.1) sha256=a72838b5f23facff21f90a5423cdcdda19e4271092b41f4ea7f50b83929e6ff9
   prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
+  prism (1.4.0) sha256=dc0e3e00e93160213dc2a65519d9002a4a1e7b962db57d444cf1a71565bb703e
   progress (3.6.0) sha256=360ed306dfa43d6174e847d563c70736dca249e2333cfec4b0387306c86cd573
   pry (0.14.2) sha256=c4fe54efedaca1d351280b45b8849af363184696fcac1c72e0415f9bdac4334d
   pry-byebug (3.10.1) sha256=c8f975c32255bfdb29e151f5532130be64ff3d0042dc858d0907e849125581f8
@@ -1029,7 +1032,7 @@ CHECKSUMS
   rswag-specs (2.16.0) sha256=8ba26085c408b0bd2ed21dc8015c80f417c7d34c63720ab7133c2549b5bd2a91
   rtlcss (0.2.1) sha256=213d5a00bf61267f93a7a516d699d77e1cc5f396743abb33c01e3f3243a7bf60
   rubocop (1.73.2) sha256=35cd1b1365ba97234323fe771abcecd09c9b77098464cd726c76aa7d9bc12b5d
-  rubocop-ast (1.38.1) sha256=80ecbe2ac9bb26693cab9405bf72b41b85a1f909f20f021b983c32c2e7d857fe
+  rubocop-ast (1.44.0) sha256=77fdaf4aacf0c7d1ef887b075686124fb4ae5743d42ff7e73bb1c0d6b61b5d0a
   rubocop-capybara (2.22.0) sha256=9c3a6704ed0243e5332fdc45112b4bb90fc4cfd23a7f175f74af4a01e21627d0
   rubocop-discourse (3.12.1) sha256=ebf7e2224f053047372071419052828c3e3a01bccb14ea1f282ac143547df9bc
   rubocop-factory_bot (2.27.0) sha256=de9918bc4e1406b3025da87c5c34c91dd6c3e802cd59339790631f963a5652ba
