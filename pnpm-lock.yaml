@@ -330,8 +330,8 @@ importers:
         specifier: workspace:1.0.0
         version: link:../pretty-text
       prosemirror-commands:
-        specifier: ^1.6.0
-        version: 1.6.2
+        specifier: ^1.7.1
+        version: 1.7.1
       prosemirror-dropcursor:
         specifier: ^1.8.1
         version: 1.8.1
@@ -7174,8 +7174,8 @@ packages:
   proper-lockfile@4.1.2:
     resolution: {integrity: sha512-TjNPblN4BwAWMXU8s9AEz4JmQxnD1NNL7bNOY/AKUzyamc379FWASUhc/K1pL2noVb+XmZKLL68cjzLsiOAMaA==}
 
-  prosemirror-commands@1.6.2:
-    resolution: {integrity: sha512-0nDHH++qcf/BuPLYvmqZTUUsPJUCPBUXt0J1ErTcDIS369CTp773itzLGIgIXG4LJXOlwYCr44+Mh4ii6MP1QA==}
+  prosemirror-commands@1.7.1:
+    resolution: {integrity: sha512-rT7qZnQtx5c0/y/KlYaGvtG411S97UaL6gdp6RIZ23DLHanMYLyfGBV5DtSnZdthQql7W+lEVbpSfwtO8T+L2w==}
 
   prosemirror-dropcursor@1.8.1:
     resolution: {integrity: sha512-M30WJdJZLyXHi3N8vxN6Zh5O8ZBbQCz0gURTfPmTIBNQ5pxrdU7A58QkNqfa98YEjSAL1HUyyU34f6Pm5xBSGw==}
@@ -8454,10 +8454,10 @@ packages:
   virtual-dom@2.1.1:
     resolution: {integrity: sha512-wb6Qc9Lbqug0kRqo/iuApfBpJJAq14Sk1faAnSmtqXiwahg7PVTvWMs9L02Z8nNIMqbwsxzBAA90bbtRLbw0zg==}
 
-  volar-service-typescript@0.0.60:
-    resolution: {integrity: sha512-QDGC66exWZMH6fs93M6XFIBMxDObxgV9q1XENII7vGzvW5KqikYG4f06AO+MWsHmAna8cI+X28xITb0SzzB0Yw==}
+  volar-service-typescript@0.0.64:
+    resolution: {integrity: sha512-FN2H97iqjR1id8AM4fH7lTXuTx2on9zD6QlUFllaiHKqgNrEITlQwm/9Ujrd9ST7MUzhgIKyUsa2WlanX9kkMg==}
     peerDependencies:
-      '@volar/language-service': ~2.4.0-alpha.19
+      '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
       '@volar/language-service':
         optional: true
@@ -10297,7 +10297,7 @@ snapshots:
       silent-error: 1.1.1
       typescript: 5.6.3
       uuid: 8.3.2
-      volar-service-typescript: 0.0.60(@volar/language-service@2.4.0-alpha.16)
+      volar-service-typescript: 0.0.64(@volar/language-service@2.4.0-alpha.16)
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
@@ -16370,7 +16370,7 @@ snapshots:
       retry: 0.12.0
       signal-exit: 3.0.7
 
-  prosemirror-commands@1.6.2:
+  prosemirror-commands@1.7.1:
     dependencies:
       prosemirror-model: 1.24.1
       prosemirror-state: 1.4.3
@@ -17981,7 +17981,7 @@ snapshots:
       x-is-array: 0.1.0
       x-is-string: 0.1.0
 
-  volar-service-typescript@0.0.60(@volar/language-service@2.4.0-alpha.16):
+  volar-service-typescript@0.0.64(@volar/language-service@2.4.0-alpha.16):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.1
